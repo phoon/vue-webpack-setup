@@ -1,0 +1,30 @@
+{
+  "name": "vue-webpack-setup",
+  "version": "1.0.0",
+  "description": "Minial setup of vue.js using webpack.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "dev": "npx webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoon/vue-webpack-setup.git"
+  },
+  "author": "phoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phoon/vue-webpack-setup/issues"
+  },
+  "homepage": "https://github.com/phoon/vue-webpack-setup#readme",
+  "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "vue": "^3.1.5"
+  }
+}
