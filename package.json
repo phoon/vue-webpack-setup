@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack",
-    "dev": "npx webpack serve"
+    "serve": "npx webpack serve"
   },
   "repository": {
     "type": "git",
@@ -19,14 +19,14 @@
   },
   "homepage": "https://github.com/phoon/vue-webpack-setup#readme",
   "devDependencies": {
+    "@vue/compiler-sfc": "^3.1.5",
     "babel-loader": "^8.2.2",
+    "vue-loader": "^16.3.3",
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@vue/compiler-sfc": "^3.1.5",
-    "vue": "^3.1.5",
-    "vue-loader": "^16.3.3"
+    "vue": "^3.1.5"
   }
 }
