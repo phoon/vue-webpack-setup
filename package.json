@@ -25,6 +25,8 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "vue": "^3.1.5"
+    "@vue/compiler-sfc": "^3.1.5",
+    "vue": "^3.1.5",
+    "vue-loader": "^16.3.3"
   }
 }

@@ -1,4 +1,5 @@
 const path = require('path');
+const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
     mode: 'development',
@@ -9,15 +10,22 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.vue$/,
+                use: 'vue-loader'
+            },
+            {
                 test: /\.js$/,
                 use: 'babel-loader'
             }
         ]
     },
+    plugins: [
+        new VueLoaderPlugin()
+    ],
     resolve: {
         alias: {
-            '@': '../src',
-            vue: '../node_modules/vue/dist/vue.esm-browser.js'
+            '@': path.join(__dirname, 'src'),
+            vue: 'vue/dist/vue.esm-browser.js'
         }
     },
     devServer: {

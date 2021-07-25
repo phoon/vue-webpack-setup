@@ -1,11 +1,4 @@
 import { createApp } from "vue";
+import App from '@/components/App.vue'
 
-var v = {
-    data() {
-        return {
-            msg: 'Hello, Vue.js!'
-        }
-    }
-}
-
-createApp(v).mount('#app');
+createApp(App).mount('#app');
