@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue.JS</title>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
 </head>
+
 <body>
     <noscript>JavaScript is not supported!</noscript>
-    <div id="app">
-        <p>{{msg}}</p>
-    </div>
-    <script src="bundle.js"></script>
+    go to <a href="/list.html">github repos list</a>
+    <div id="app"></div>
+    <script src="https://cdn.staticfile.org/vue/3.1.5/vue.global.prod.min.js"></script>
 </body>
+
 </html>
